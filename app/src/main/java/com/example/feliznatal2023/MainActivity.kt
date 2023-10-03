@@ -50,7 +50,7 @@ fun TextoCartão(){
     )
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(20.dp)
+        verticalArrangement = Arrangement.spacedBy(20.dp),
         modifier = Modifier.fillMaxSize()
     ) {
 
@@ -61,7 +61,7 @@ fun TextoCartão(){
             fontWeight = FontWeight.Black,
             fontFamily = FontFamily.Cursive,
             lineHeight = 110.sp,
-            color = Color.DarkGray
+            color = Color.Black
 
         )
         Text(
