@@ -3,6 +3,7 @@ package com.example.feliznatal2023
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -14,6 +15,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -26,7 +29,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             FelizNatal2023Theme {
-
+            TextoCartão()
             }
         }
     }
@@ -35,6 +38,13 @@ class MainActivity : ComponentActivity() {
 @Preview(showSystemUi = true)
 @Composable
 fun TextoCartão(){
+    Image(
+        painter = painterResource(id = R.drawable.arvoredenatal) ,
+        contentDescription =null,
+        contentScale = ContentScale.Crop,
+        alpha = 0.5F,
+        modifier = Modifier.fillMaxSize(),
+    )
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
@@ -53,9 +63,9 @@ fun TextoCartão(){
         Text(
             text = "Para: Anne",
             fontSize = 40.sp,
-            ontWeight = FontWeight.Bold,
+            fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Cursive,
-            color = Color. Green
+            color = Color.Red,
         )
     }
 
