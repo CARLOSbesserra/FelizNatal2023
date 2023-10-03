@@ -61,20 +61,28 @@ fun TextoCartão(){
             fontWeight = FontWeight.Black,
             fontFamily = FontFamily.Cursive,
             lineHeight = 110.sp,
-            color = Color.Black
+            color = Color.Black,
+            modifier = Modifier.padding(top = 150.dp)
 
         )
-        Text(
-            text = "Para: Anne",
-            fontSize = 50.sp,
-            textAlign = TextAlign.End,
-            fontWeight = FontWeight.Bold,
-            fontFamily = FontFamily.Cursive,
-            color = Color.Red,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(end = 30.dp)
-        )
+        Dedicatoria(nomes = "De Carlos H.")
+        Dedicatoria(nomes = "Para Anne")
+
     }
 
+}
+
+@Composable
+fun Dedicatoria(nomes: String){
+    Text(
+        text = nomes,
+        fontSize = 40.sp,
+        textAlign = TextAlign.End,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily.Cursive,
+        color = Color.Red,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(end = 30.dp)
+    )
 }
