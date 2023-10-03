@@ -50,7 +50,7 @@ fun TextoCartão(){
     )
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center,
+        verticalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier.fillMaxSize()
     ) {
 
