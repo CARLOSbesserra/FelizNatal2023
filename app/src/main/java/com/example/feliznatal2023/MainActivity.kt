@@ -50,13 +50,13 @@ fun TextoCartão(){
     )
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.SpaceBetween,
+        verticalArrangement = Arrangement.spacedBy(20.dp)
         modifier = Modifier.fillMaxSize()
     ) {
 
         Text(
             text = "Feliz Natal 2023 !!!",
-            fontSize = 80.sp,
+            fontSize = 90.sp,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Black,
             fontFamily = FontFamily.Cursive,
@@ -66,7 +66,7 @@ fun TextoCartão(){
         )
         Text(
             text = "Para: Anne",
-            fontSize = 40.sp,
+            fontSize = 50.sp,
             textAlign = TextAlign.End,
             fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Cursive,
