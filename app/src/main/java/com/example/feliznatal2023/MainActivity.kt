@@ -65,7 +65,7 @@ fun TextoCartão(){
             modifier = Modifier.padding(top = 150.dp)
 
         )
-        Dedicatoria(nomes = "De Carlos H.")
+        Dedicatoria(nomes = "De Carlos H")
         Dedicatoria(nomes = "Para Anne")
 
     }
