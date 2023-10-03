@@ -56,7 +56,7 @@ fun TextoCartão(){
 
         Text(
             text = "Feliz Natal 2023 !!!",
-            fontSize = 90.sp,
+            fontSize = 80.sp,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Black,
             fontFamily = FontFamily.Cursive,
